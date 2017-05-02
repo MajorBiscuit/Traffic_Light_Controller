@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/Andreas/Documents/Engineering/PartIIA/3B2/Lab/Schematic/TrafficLight.sch</source>
+    <date>3/2/2017 9:56:34 μμ</date>
+    <tool>Eeschema 4.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Traffic Light Controller</title>
+        <company>Andreas Theodosiou</company>
+        <rev/>
+        <date>2017-01-24</date>
+        <source>TrafficLight.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>74LS93</value>
+      <libsource lib="TrafficLightControllerCustom" part="74LS93new"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58869DC9</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>74LS00</value>
+      <libsource lib="74xx" part="74LS00"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893E597</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>74LS04</value>
+      <libsource lib="74xx" part="74LS04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893E793</tstamp>
+    </comp>
+    <comp ref="Red1">
+      <value>LED</value>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893EC92</tstamp>
+    </comp>
+    <comp ref="Amber1">
+      <value>LED</value>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893ED66</tstamp>
+    </comp>
+    <comp ref="Green1">
+      <value>LED</value>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893EDD6</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>330</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893EE82</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>330</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893EF15</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>330</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893EF87</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>74LS86</value>
+      <libsource lib="74xx" part="74LS86"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893F35F</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPDT</value>
+      <libsource lib="switches" part="SW_SPDT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5893FC83</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74LS00">
+      <aliases>
+        <alias>74LS37</alias>
+        <alias>7400</alias>
+        <alias>74HCT00</alias>
+        <alias>74HC00</alias>
+      </aliases>
+      <description>Quad nand2</description>
+      <footprints>
+        <fp>14DIP300*</fp>
+        <fp>SO14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS04">
+      <description>Hex Inverseur</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="output"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="~" type="input"/>
+        <pin num="12" name="~" type="output"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS86">
+      <aliases>
+        <alias>74HC86</alias>
+      </aliases>
+      <description>Quad XOR 2 inputs</description>
+      <docs>74xx/74ls86.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS86</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN1" type="input"/>
+        <pin num="2" name="IN2" type="input"/>
+        <pin num="3" name="OUT" type="output"/>
+        <pin num="4" name="IN1" type="input"/>
+        <pin num="5" name="IN2" type="input"/>
+        <pin num="6" name="OUT" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="OUT" type="output"/>
+        <pin num="9" name="IN1" type="input"/>
+        <pin num="10" name="IN2" type="input"/>
+        <pin num="11" name="OUT" type="output"/>
+        <pin num="12" name="IN1" type="input"/>
+        <pin num="13" name="IN2" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="TrafficLightControllerCustom" part="74LS93new">
+      <description>Divide by 12 counter</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS93new</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CKB" type="input"/>
+        <pin num="2" name="R0(1)" type="input"/>
+        <pin num="3" name="R0(2)" type="input"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="8" name="QC" type="output"/>
+        <pin num="9" name="QB" type="output"/>
+        <pin num="10" name="GND" type="input"/>
+        <pin num="11" name="QD" type="output"/>
+        <pin num="12" name="QA" type="output"/>
+        <pin num="14" name="CPA" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="switches" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\share\kicad\library\74xx.lib</uri>
+    </library>
+    <library logical="TrafficLightControllerCustom">
+      <uri>C:\Users\Andreas\Documents\Engineering\PartIIA\3B2\Lab\Schematic\Library\TrafficLightControllerCustom.lib</uri>
+    </library>
+    <library logical="switches">
+      <uri>C:\Program Files\KiCad\share\kicad\library\switches.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="3" name="Net-(Amber1-Pad1)">
+      <node ref="U3" pin="12"/>
+      <node ref="Amber1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(Amber1-Pad2)">
+      <node ref="Amber1" pin="2"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="6" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="7" name="Net-(Green1-Pad1)">
+      <node ref="U3" pin="10"/>
+      <node ref="Green1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(Green1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="Green1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="12"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="10" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="Red1" pin="2"/>
+    </net>
+    <net code="11" name="/A">
+      <node ref="U3" pin="13"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="12" name="/G">
+      <node ref="U3" pin="11"/>
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="13" name="VCC">
+      <node ref="U3" pin="14"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U1" pin="5"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="14" name="GND">
+      <node ref="SW1" pin="3"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="15" name="Net-(Red1-Pad1)">
+      <node ref="U2" pin="8"/>
+      <node ref="Red1" pin="1"/>
+    </net>
+    <net code="16" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="5"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="17" name="/1HzCLOCK">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad11)">
+      <node ref="U3" pin="3"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="19" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="20" name="/I">
+      <node ref="U4" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="21" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+      <node ref="U3" pin="6"/>
+    </net>
+  </nets>
+</export>

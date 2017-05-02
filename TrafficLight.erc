@@ -1,0 +1,9 @@
+ERC report (03/02/2017 03:12:42, Encoding UTF8 )
+
+***** Sheet /
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (55.88 mm,101.60 mm): Pin 14 (Input) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (132.08 mm,87.63 mm): Pin 5 (Input) of component U2 is unconnected.
+
+ ** ERC messages: 2  Errors 0  Warnings 2
